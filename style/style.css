@@ -18,3 +18,56 @@
 .text-white{
     color: var(--color-primary-color);
 }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+    align-content: center;
+}
+.align-start{
+    align-items: flex-start;
+    align-content: flex-start;
+}
+button{
+    background-color: var(--color-buttom-color);
+    color: white;
+    padding: 4px 6px;
+    border: none;
+}
+/* header  */
+header{
+    width: 100%;
+}
+nav{
+    background-color: var(--color-primary-color);
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    z-index: 1;
+    padding: 0 10px;
+}
+nav div *{
+    margin-left: 10px;
+    vertical-align:middle;
+}
+nav a{
+    text-decoration: none;
+    color: gray;
+}
+
+#hero{
+    background-color: var(--color-secondary-color);
+    padding-top: 60px;
+}
