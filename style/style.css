@@ -21,6 +21,12 @@ body{
 .text-white{
     color: var(--color-primary-color);
 }
+.text-gray{
+    color: gray;
+}
+.text-bold{
+    font-weight: bold;
+}
 .container{
     max-width: 1000px;
     margin: 0 auto;
@@ -43,11 +49,26 @@ body{
     align-items: flex-start;
     align-content: flex-start;
 }
+.wrap{
+    flex-wrap: wrap;
+}
+.gap{
+    gap: 30px;
+}
 button{
     background-color: var(--color-buttom-color);
     color: white;
     padding: 4px 6px;
     border: none;
+}
+.button-white{
+    background-color: var(--color-primary-color);
+    border: 1px solid black;
+    padding: 10px 12px;
+    color: black;
+}
+.border{
+    border: 1px solid black;
 }
 /* header  */
 header{
@@ -97,9 +118,84 @@ nav a{
 #hero figure{
     width: calc(100% / 3 * 2);
     height: 100%;
-    overflow: hidden;
 }
 #hero img{
-    width: calc(100% + 30px);
-    height: auto;
+    width: 100%;
+    transform: scale(1.1);
+    position: relative;
+    top: 22px;
+    left: 22px;
+}
+/* main  */
+section{
+    padding: 50px;
+}
+section h1{
+    padding-bottom: 30px;
+}
+.card{
+    width: calc(100% / 3 - 20px);
+    min-width: 200px;
+    margin: 30px 0;
+}
+.card .card-header{
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+.card>*{
+    padding: 3px 10px;
+}
+.card ul{
+    padding: 20px 10px;
+}
+.card ul li{
+    padding: 8px 0;
+}
+.card button{
+    display: block;
+    width: 75%;
+    margin: 0 auto 20px;
+    padding: 15px 10px;
+}
+.span-border-bottom{
+    display: inline-block;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+.big-card{
+    width: 100%;
+}
+.card.big-card button{
+    width: 50%;
+}
+.card.big-card h2{
+    padding: 10px 15px 20px;
+}
+.card.big-card .text-bold{
+    padding:10px 0 40px 15px;
+}
+.card.big-card p{
+    padding: 0 15px 20px;
+}
+#figure-partner{
+    margin-top: 100px;
+    width: calc(100% / 3 * 2);
+}
+main img{
+    width: 100%;
+}
+.text-img{
+    width: calc(100% / 3);
+    padding-left: 15px;
+    padding-top: 45px;
+}
+#figure-partner+.text-img{
+    margin-top: 100px;
+}
+.text-img p{
+    display: block;
+    padding: 15px 0 20px;
 }
