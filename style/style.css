@@ -136,16 +136,19 @@ nav a{
     left: 22px;
 }
 /* main  */
-section{
-    padding: 50px;
+section.container{
+    padding: 50px 100px;
 }
 section h1{
     padding-bottom: 30px;
 }
 .card{
-    width: calc(100% / 3 - 20px);
+    width: calc(100% / 3);
     min-width: 200px;
     margin: 30px 0;
+}
+div.gap .card{
+    width: calc(100% / 3 - 20px);
 }
 .card .card-header{
     text-align: center;
@@ -207,4 +210,58 @@ main img{
 .text-img p{
     display: block;
     padding: 15px 0 20px;
+}
+.sponsor-wrapper{
+    width: calc(100 / 3);
+    height: 33vw;
+}
+.sponsor-card{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    min-width: none;
+}
+.sponsor-card img{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    filter: invert(99%) sepia(2%) saturate(18%) hue-rotate(139deg) brightness(105%) contrast(100%);
+}
+#designit{
+    background-color: #a2d39b;
+}
+#asu{
+    background-color: #61082b;
+}
+#uf{
+    background-color: #0093ce;
+}
+#topps{
+    background-color:#ff1c1c;
+}
+#w-b-r{
+    background-color: #d5001f;
+}
+#h-c{
+    background-color: #b4d0e7;
+}
+#l-p{
+    background-color: #0d2481;
+}
+#c-c{
+    background-color: #ffd830;
+}
+.sponsor-details{
+    margin: 30px 0;
+    width: calc(100% / 3);
+    height: 33vw;
+    padding: 30px;
+    overflow-y: scroll;
+}
+.sponsor-details img{
+    width: 50%;
+    margin-bottom: 50px;
 }
