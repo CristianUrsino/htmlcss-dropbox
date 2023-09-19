@@ -18,6 +18,14 @@ body{
 .debug{
     /* border: 1px solid black; */
 }
+a{
+    color: black;
+    text-decoration: none;
+}
+.normal-link{
+    color: #06409f;
+    text-decoration: underline;
+}
 .text-white{
     color: var(--color-primary-color);
 }
@@ -93,9 +101,6 @@ button{
 .border-top{
     border-top: 1px solid black;
 }
-.mb-10{
-    margin-bottom: 10px;
-}
 .mb-20{
     margin-bottom: 20px;
 }
@@ -111,10 +116,10 @@ button{
 .pt-30{
     padding-top: 30px;
 }
-/* header  */
-header{
-    width: 100%;
+.pb-30{
+    padding-bottom: 30px;
 }
+/* header  */
 nav{
     background-color: var(--color-primary-color);
     width: 100%;
@@ -133,38 +138,27 @@ nav a{
     color: gray;
 }
 #hero{
-    padding-top: 100px;
     position: relative;
+    bottom: -70px;
+    margin-bottom: 60px;
 }
 #title{
-    font-size: 4.2em;
-    padding-bottom: 40px;   
+    font-size: 4.2em;   
 }
 .hero-text{
     width: calc(100% / 3);
-    min-width: 250px;
-    padding-bottom: 70px;
+    min-width: 350px
 }
 .hero-text button{
-    margin: 30px 0;
-    padding: 10px;
-}
-.hero-text i{
-    font-size: 50px;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+    padding: 10px 12px;
 }
 #hero figure{
     width: calc(100% / 3 * 2);
     height: 100%;
+    min-width: 350px;
 }
 #hero img{
     width: 100%;
-    transform: scale(1.1);
-    position: relative;
-    top: 22px;
-    left: 22px;
 }
 /* main  */
 .card{
