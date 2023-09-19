@@ -160,7 +160,7 @@ nav a{
     height: 100%;
     min-width: 350px;
 }
-#hero img{
+#hero img, main img{
     width: 100%;
 }
 /* main  */
@@ -171,7 +171,7 @@ nav a{
 div.gap .card{
     width: calc(100% / 3 - 20px);
 }
-.card .card-header{
+main .card-header{
     text-align: center;
     padding: 15px;
 }
@@ -193,17 +193,11 @@ div.gap .card{
     padding-bottom: 40px;
     border-bottom: 1px solid black;
 }
-.big-card{
-    width: 100%;
-}
 .card.big-card button{
     width: 50%;
 }
 #figure-partner{
     width: calc(100% / 3 * 2);
-}
-main img{
-    width: 100%;
 }
 .text-img{
     width: calc(100% / 3);
@@ -214,23 +208,27 @@ main img{
     display: block;
 }
 .sponsor-wrapper{
-    width: calc(100 / 3);
     height: 33vw;
 }
 .sponsor-card{
     width: 50%;
     height: 50%;
-    position: relative;
-    min-width: none;
 }
 .sponsor-card img{
     width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 50% auto;
+    transform: translate(0,-50%);
     display: block;
     filter: invert(99%) sepia(2%) saturate(18%) hue-rotate(139deg) brightness(105%) contrast(100%);
+}
+.sponsor-details{
+    width: calc(100% / 3);
+    height: 33vw;
+    padding: 30px;
+    overflow-y: auto;
+}
+.sponsor-details img{
+    width: 50%;
 }
 #designit{
     background-color: #a2d39b;
@@ -256,21 +254,10 @@ main img{
 #c-c{
     background-color: #ffd830;
 }
-.sponsor-details{
-    margin: 30px 0;
-    width: calc(100% / 3);
-    height: 33vw;
-    padding: 30px;
-    overflow-y: auto;
-}
-.sponsor-details img{
-    width: 50%;
-    margin-bottom: 50px;
-}
 #to-dropbox{
     color: var(--color-violet);
     width: 60%;
-    min-width: 500px
+    min-width: 500px;
     line-height: 35px;
 }
 /* footer  */
